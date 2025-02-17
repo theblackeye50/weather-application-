@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Added for better box sizing */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* background: linear-gradient(135deg, #6e8efb, #a777e3); */
+    background-image: url(nature.jpg);
+    background-size: cover;
+}
+
+.card {
+    height: 400px;
+    width: 350px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.search {
+    margin-top: 20px;
+    display: flex; /* Added display flex */
+    gap: 10px; /* Added gap between input and button */
+}
+
+.search input {
+    padding: 5px;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    border: none;
+    flex-grow: 1; /* Added to make input take available space */
+}
+
+.search button {
+    height: 35px; /* Increased height for better alignment */
+    width: 70px; /* Increased width for better aesthetics */
+    border-radius: 7px;
+    border: none;
+    cursor: pointer; /* Added cursor pointer */
+    background-color: #fff; /* Added background color */
+}
+
+button:hover {
+    background-color: aquamarine;
+}
+
+.season {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Added margin-top for better spacing */
+}
+
+.season img {
+    height: 120px;
+    width: 120px;
+}
+
+.extra {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 30px; /* Adjusted margin-top for better spacing */
+}
+
+.humid, .wind {
+    display: flex;
+    align-items: center; /* Added for better vertical alignment */
+    gap: 10px;
+}
+
+.humid img, .wind img {
+    height: 40px;
+    width: 40px;
+}
